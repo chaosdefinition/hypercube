@@ -57,12 +57,7 @@ public class HypercubeException extends RuntimeException {
 		System.err.println("hypercube: " + getMessage());
 		Throwable cause = getCause();
 		while (cause != null) {
-			System.err.print("Caused by: " + cause);
-			if (cause.getMessage() != null) {
-				System.err.println(": " + cause.getMessage());
-			} else {
-				System.err.println();
-			}
+			System.err.println("Caused by: " + cause);
 			cause = cause.getCause();
 		}
 	}

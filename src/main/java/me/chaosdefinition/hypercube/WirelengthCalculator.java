@@ -5,8 +5,9 @@ import java.util.Collections;
 import java.util.List;
 
 /**
+ * The main class of hypercube.
+ * 
  * @author Chaos Shen
- *
  */
 public class WirelengthCalculator {
 
@@ -207,7 +208,7 @@ public class WirelengthCalculator {
 			if (wirelength <= this.minWirelength) {
 				this.minWirelength = wirelength;
 				if (this.verbose) {
-					System.out.println(mapping);
+					System.out.println(mapping + ": " + wirelength);
 				}
 			}
 		} else {
