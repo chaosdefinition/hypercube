@@ -13,7 +13,7 @@ import org.kohsuke.args4j.Option;
  *
  * @author Chaos Shen
  */
-public class Options {
+public class OptionParser {
 
 	@Option(name = "-d",
 			aliases = "--dimension",

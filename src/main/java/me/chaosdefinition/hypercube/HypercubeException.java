@@ -45,6 +45,7 @@ public class HypercubeException extends RuntimeException {
 	 * Overrides the default {@link Throwable#printStackTrace()} and prints a
 	 * shorter backtrace constisting only of causes and their messages (if
 	 * exist) like the following.
+	 * 
 	 * <pre>
 	 * hypercube: Message of this exception.
 	 * Caused by: java.lang.NullPointerException

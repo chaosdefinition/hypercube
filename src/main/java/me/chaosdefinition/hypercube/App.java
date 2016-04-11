@@ -11,16 +11,16 @@ public class App {
 
 	public static void main(String[] args) {
 		try {
-			Options options = new Options();
-			options.parse(args);
+			OptionParser parser = new OptionParser();
+			parser.parse(args);
 
-			int dimension = options.getDimension();
-			List<Integer> initial = options.getInitial();
-			Integer start = options.getStart(), end = options.getEnd();
-			boolean verbose = options.isVerbose();
+			int dimension = parser.getDimension();
+			List<Integer> initial = parser.getInitial();
+			Integer start = parser.getStart(), end = parser.getEnd();
+			boolean verbose = parser.isVerbose();
 
 			WirelengthCalculator calculator = null;
-			if (options.getInitial() != null) {
+			if (parser.getInitial() != null) {
 				calculator = new WirelengthCalculator(dimension, initial);
 			} else {
 				calculator = new WirelengthCalculator(dimension);

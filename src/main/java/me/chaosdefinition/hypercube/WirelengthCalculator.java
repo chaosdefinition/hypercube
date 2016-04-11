@@ -117,7 +117,7 @@ public class WirelengthCalculator {
 			if (initial.size() != this.vertices) {
 				throw new HypercubeException("Illegal size of initial mapping!");
 			}
-			/* block to check existence of each vertex */ {
+			/* a block to check existence of each vertex */ {
 				boolean[] presence = new boolean[this.vertices];
 				for (int i : initial) {
 					if (i >= 0 && i < this.vertices) {
@@ -225,32 +225,16 @@ public class WirelengthCalculator {
 		return dimension;
 	}
 
-	public void setDimension(int dimension) {
-		this.dimension = dimension;
-	}
-
 	public int getVertices() {
 		return vertices;
-	}
-
-	public void setVertices(int vertices) {
-		this.vertices = vertices;
 	}
 
 	public List<Integer> getInitial() {
 		return initial;
 	}
 
-	public void setInitial(List<Integer> initial) {
-		this.initial = initial;
-	}
-
 	public int getMinWirelength() {
 		return minWirelength;
-	}
-
-	public void setMinWirelength(int minWirelength) {
-		this.minWirelength = minWirelength;
 	}
 
 	public boolean isVerbose() {
