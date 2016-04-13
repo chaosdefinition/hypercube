@@ -1,4 +1,4 @@
-package me.chaosdefinition.hypercube;
+package me.chaosdefinition.hypercube.optparse.handler;
 
 import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;

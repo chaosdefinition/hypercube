@@ -1,4 +1,4 @@
-package me.chaosdefinition.hypercube;
+package me.chaosdefinition.hypercube.optparse;
 
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
@@ -7,6 +7,9 @@ import java.util.List;
 import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;
 import org.kohsuke.args4j.Option;
+
+import me.chaosdefinition.hypercube.common.HypercubeException;
+import me.chaosdefinition.hypercube.optparse.handler.IntegerArrayOptionHandler;
 
 /**
  * A command line argument parser for hypercube.

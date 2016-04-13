@@ -1,4 +1,4 @@
-package me.chaosdefinition.hypercube;
+package me.chaosdefinition.hypercube.common;
 
 /**
  * The default exception in hypercube. This is just a simple wrapper of
@@ -26,6 +26,16 @@ public class HypercubeException extends RuntimeException {
 	 */
 	public HypercubeException(String message) {
 		super(message);
+	}
+
+	/**
+	 * Constructs a new {@link HypercubeException} with only cause.
+	 * 
+	 * @param cause
+	 *            the cause of this exception
+	 */
+	public HypercubeException(Throwable cause) {
+		super("See below.", cause);
 	}
 
 	/**

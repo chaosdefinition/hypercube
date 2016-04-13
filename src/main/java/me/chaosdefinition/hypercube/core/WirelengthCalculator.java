@@ -1,8 +1,10 @@
-package me.chaosdefinition.hypercube;
+package me.chaosdefinition.hypercube.core;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import me.chaosdefinition.hypercube.common.HypercubeException;
 
 /**
  * The main class of hypercube.

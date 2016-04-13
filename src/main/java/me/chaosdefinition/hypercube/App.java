@@ -2,6 +2,10 @@ package me.chaosdefinition.hypercube;
 
 import java.util.List;
 
+import me.chaosdefinition.hypercube.common.HypercubeException;
+import me.chaosdefinition.hypercube.core.WirelengthCalculator;
+import me.chaosdefinition.hypercube.optparse.OptionParser;
+
 /**
  * Application starting point.
  *
@@ -39,7 +43,11 @@ public class App {
 				System.out.println("Minimum: " + minimum);
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			if (e instanceof HypercubeException) {
+				e.printStackTrace();
+			} else {
+				new HypercubeException(e).printStackTrace();
+			}
 			System.exit(1);
 		}
 	}
