@@ -210,7 +210,7 @@ public class WirelengthCalculator {
 			if (wirelength <= this.minWirelength) {
 				this.minWirelength = wirelength;
 				if (this.verbose) {
-					System.out.println(mapping + ": " + wirelength);
+					System.out.println(mapping);
 				}
 			}
 		} else {
